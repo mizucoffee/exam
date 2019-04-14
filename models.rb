@@ -12,7 +12,7 @@ ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'] || "sqlite3:db/devel
 
 # メモに関するモデルの作成
 class Memo < ActiveRecord::Base
-  belongs_to :categories
+  belongs_to :category
 end
 
 # カテゴリに関するモデルの作成
